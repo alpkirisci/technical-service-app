@@ -44,4 +44,15 @@ model ServiceRequest {
   repair           String?
   repairCost       Float?      @default(0)
   createdAt        DateTime @default(now())
+  images           Image[]
+}
+
+model Image {
+  id               Int       @id @default(autoincrement())
+  serviceRequestId Int
+  url              String
+  altText          String?
+  serviceRequest   ServiceRequest @relation(fields: [serviceRequestId], references: [id])
+
+  @@index([serviceRequestId])
 }

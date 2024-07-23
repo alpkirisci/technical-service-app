@@ -3,7 +3,7 @@
 client_id = "f6737dc33b68a44d0e4480ecf00338be"
 name = "technical-service-app"
 handle = "technical-service-app"
-application_url = "https://styles-columbia-flesh-gpl.trycloudflare.com"
+application_url = "https://elevation-stated-years-statement.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://styles-columbia-flesh-gpl.trycloudflare.com/auth/callback",
-  "https://styles-columbia-flesh-gpl.trycloudflare.com/auth/shopify/callback",
-  "https://styles-columbia-flesh-gpl.trycloudflare.com/api/auth/callback"
+  "https://elevation-stated-years-statement.trycloudflare.com/auth/callback",
+  "https://elevation-stated-years-statement.trycloudflare.com/auth/shopify/callback",
+  "https://elevation-stated-years-statement.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
