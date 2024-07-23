@@ -30,3 +30,18 @@ model Session {
   collaborator  Boolean?  @default(false)
   emailVerified Boolean?  @default(false)
 }
+
+
+model ServiceRequest {
+  id               Int      @id @default(autoincrement())
+  customerId       String
+  productHandle    String
+  boughtFrom       String
+  billingDate      DateTime
+  billingNo        String
+  complaint        String
+  status           String
+  repair           String?
+  repairCost       Float?      @default(0)
+  createdAt        DateTime @default(now())
+}
