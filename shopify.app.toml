@@ -3,7 +3,7 @@
 client_id = "f6737dc33b68a44d0e4480ecf00338be"
 name = "technical-service-app"
 handle = "technical-service-app"
-application_url = "https://minolta-silver-universities-floppy.trycloudflare.com"
+application_url = "https://constant-required-americans-tried.trycloudflare.com"
 embedded = true
 
 [build]
@@ -13,13 +13,13 @@ include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "read_customers,write_customers,write_products,read_metaobjects,write_metaobjects"
+scopes = "read_customers,read_metaobjects,write_customers,write_metaobjects,write_products"
 
 [auth]
 redirect_urls = [
-  "https://minolta-silver-universities-floppy.trycloudflare.com/auth/callback",
-  "https://minolta-silver-universities-floppy.trycloudflare.com/auth/shopify/callback",
-  "https://minolta-silver-universities-floppy.trycloudflare.com/api/auth/callback"
+  "https://constant-required-americans-tried.trycloudflare.com/auth/callback",
+  "https://constant-required-americans-tried.trycloudflare.com/auth/shopify/callback",
+  "https://constant-required-americans-tried.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

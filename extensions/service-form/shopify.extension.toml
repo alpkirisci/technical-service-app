@@ -1,5 +1,2 @@
 name = "service-form"
 type = "theme"
-
-[blocks]
-service_form = "blocks/service_form.liquid"
