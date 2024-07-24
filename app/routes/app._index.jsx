@@ -1,7 +1,9 @@
 import { json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { useLoaderData, Link} from "@remix-run/react";
 import { authenticate } from "../shopify.server";
 import { getCustomerId } from "../models/Service.server";
+
+
 
 export async function loader({ request }) {
   const { admin, session } = await authenticate.admin(request);
@@ -11,6 +13,7 @@ export async function loader({ request }) {
     customer,
   });
 }
+
 
 export default function CustomerPage() {
   const { customer } = useLoaderData();
@@ -26,6 +29,8 @@ export default function CustomerPage() {
       ) : (
         <p>No customer found.</p>
       )}
+      
+
     </div>
   );
 }
